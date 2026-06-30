@@ -9,6 +9,7 @@ import RegisterScreen from '../screens/Register';
 import LoginScreen from '../screens/Login'; 
 import HomeScreen from '../screens/Home';
 import HistoryScreen from '../screens/History';
+import FavoritesScreen from '../screens/Favorites';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +41,7 @@ export default function AppNavigator() {
                     <>
                         <Stack.Screen name="Home" component={HomeScreen} options={{title: 'Météo Actuelle'}} />
                         <Stack.Screen name="History" component={HistoryScreen} options={{ title: 'Historique' }} />
+                        <Stack.Screen name="Favorites" component={FavoritesScreen} options={{ title: 'Mes Favoris' }} />
                     </>
                 ) : (
                     <>

@@ -114,6 +114,12 @@ export default function HomeScreen({ navigation }) {
       >
         <Text style={styles.navButtonText}>Historique</Text>
       </TouchableOpacity>
+      <TouchableOpacity 
+        style={styles.navButton} 
+        onPress={() => navigation.navigate('Favorites')}
+      >
+        <Text style={styles.navButtonText}>Mes Favoris</Text>
+      </TouchableOpacity>
     </View>
   );
 }
