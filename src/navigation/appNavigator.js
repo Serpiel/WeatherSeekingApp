@@ -6,7 +6,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../services/firebaseConfig';
 
 import RegisterScreen from '../screens/Register';
-import LoginScreen from '../screens/Login'; 
+import LoginScreen from '../screens/Login';
+import ResetPasswordScreen from '../screens/ResetPassword';
 import HomeScreen from '../screens/Home';
 import HistoryScreen from '../screens/History';
 import FavoritesScreen from '../screens/Favorites';
@@ -47,6 +48,7 @@ export default function AppNavigator() {
                     <>
                         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
                         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
+                        <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} options={{ headerShown: false }} />
                     </>
                 )}
             </Stack.Navigator>

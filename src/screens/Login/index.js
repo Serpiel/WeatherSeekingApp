@@ -64,9 +64,12 @@ return (
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
             <Text style={styles.buttonText}>Se connecter</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ResetPassword')}>
+            <Text style={ styles.linkText}>Mot de passe oublié ?</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <Text style={styles.linkText}>Pas de compte ? Créez-en un</Text>
         </TouchableOpacity>
     </View>
-);
+); 
 }
